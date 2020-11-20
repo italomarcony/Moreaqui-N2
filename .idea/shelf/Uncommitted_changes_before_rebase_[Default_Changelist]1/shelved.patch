@@ -1,0 +1,598 @@
+Index: .idea/compiler.xml
+===================================================================
+--- .idea/compiler.xml	(date 1605557610619)
++++ .idea/compiler.xml	(date 1605557610619)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="1.8" />
++  </component>
++</project>
+\ No newline at end of file
+Index: gradle/wrapper/gradle-wrapper.properties
+===================================================================
+--- gradle/wrapper/gradle-wrapper.properties	(date 1605186268000)
++++ gradle/wrapper/gradle-wrapper.properties	(date 1605186268000)
+@@ -0,0 +1,6 @@
++#Mon Nov 09 13:27:23 GFT 2020
++distributionBase=GRADLE_USER_HOME
++distributionPath=wrapper/dists
++zipStoreBase=GRADLE_USER_HOME
++zipStorePath=wrapper/dists
++distributionUrl=https\://services.gradle.org/distributions/gradle-6.1.1-all.zip
+Index: .idea/jarRepositories.xml
+===================================================================
+--- .idea/jarRepositories.xml	(date 1605186268000)
++++ .idea/jarRepositories.xml	(date 1605186268000)
+@@ -0,0 +1,25 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="BintrayJCenter" />
++      <option name="name" value="BintrayJCenter" />
++      <option name="url" value="https://jcenter.bintray.com/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="Google" />
++      <option name="name" value="Google" />
++      <option name="url" value="https://dl.google.com/dl/android/maven2/" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+===================================================================
+--- .idea/gradle.xml	(date 1605557610629)
++++ .idea/gradle.xml	(date 1605557610629)
+@@ -0,0 +1,22 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="testRunner" value="PLATFORM" />
++        <option name="distributionType" value="DEFAULT_WRAPPED" />
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="1.8" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
++        <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+===================================================================
+--- .idea/misc.xml	(date 1605557610607)
++++ .idea/misc.xml	(date 1605557610607)
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/build/classes" />
++  </component>
++  <component name="ProjectType">
++    <option name="id" value="Android" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/runConfigurations.xml
+===================================================================
+--- .idea/runConfigurations.xml	(date 1605186268000)
++++ .idea/runConfigurations.xml	(date 1605186268000)
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RunConfigurationProducerService">
++    <option name="ignoredProducers">
++      <set>
++        <option value="org.jetbrains.plugins.gradle.execution.test.runner.AllInPackageGradleConfigurationProducer" />
++        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestClassGradleConfigurationProducer" />
++        <option value="org.jetbrains.plugins.gradle.execution.test.runner.TestMethodGradleConfigurationProducer" />
++      </set>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+===================================================================
+--- .idea/vcs.xml	(date 1605803845230)
++++ .idea/vcs.xml	(date 1605803845230)
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/codeStyles/Project.xml
+===================================================================
+--- .idea/codeStyles/Project.xml	(date 1605186268000)
++++ .idea/codeStyles/Project.xml	(date 1605186268000)
+@@ -0,0 +1,116 @@
++<component name="ProjectCodeStyleConfiguration">
++  <code_scheme name="Project" version="173">
++    <codeStyleSettings language="XML">
++      <indentOptions>
++        <option name="CONTINUATION_INDENT_SIZE" value="4" />
++      </indentOptions>
++      <arrangement>
++        <rules>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>xmlns:android</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>xmlns:.*</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++              <order>BY_NAME</order>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*:id</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*:name</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>name</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>style</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>^$</XML_NAMESPACE>
++                </AND>
++              </match>
++              <order>BY_NAME</order>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>http://schemas.android.com/apk/res/android</XML_NAMESPACE>
++                </AND>
++              </match>
++              <order>ANDROID_ATTRIBUTE_ORDER</order>
++            </rule>
++          </section>
++          <section>
++            <rule>
++              <match>
++                <AND>
++                  <NAME>.*</NAME>
++                  <XML_ATTRIBUTE />
++                  <XML_NAMESPACE>.*</XML_NAMESPACE>
++                </AND>
++              </match>
++              <order>BY_NAME</order>
++            </rule>
++          </section>
++        </rules>
++      </arrangement>
++    </codeStyleSettings>
++  </code_scheme>
++</component>
+\ No newline at end of file
+Index: settings.gradle
+===================================================================
+--- settings.gradle	(date 1605186268000)
++++ settings.gradle	(date 1605186268000)
+@@ -0,0 +1,2 @@
++include ':app'
++rootProject.name = "N2"
+\ No newline at end of file
+Index: gradle.properties
+===================================================================
+--- gradle.properties	(date 1605186268000)
++++ gradle.properties	(date 1605186268000)
+@@ -0,0 +1,19 @@
++# Project-wide Gradle settings.
++# IDE (e.g. Android Studio) users:
++# Gradle settings configured through the IDE *will override*
++# any settings specified in this file.
++# For more details on how to configure your build environment visit
++# http://www.gradle.org/docs/current/userguide/build_environment.html
++# Specifies the JVM arguments used for the daemon process.
++# The setting is particularly useful for tweaking memory settings.
++org.gradle.jvmargs=-Xmx2048m
++# When configured, Gradle will run in incubating parallel mode.
++# This option should only be used with decoupled projects. More details, visit
++# http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
++# org.gradle.parallel=true
++# AndroidX package structure to make it clearer which packages are bundled with the
++# Android operating system, and which are packaged with your app"s APK
++# https://developer.android.com/topic/libraries/support-library/androidx-rn
++android.useAndroidX=true
++# Automatically convert third-party libraries to use AndroidX
++android.enableJetifier=true
+\ No newline at end of file
+Index: .gitignore
+===================================================================
+--- .gitignore	(date 1605186268000)
++++ .gitignore	(date 1605186268000)
+@@ -0,0 +1,14 @@
++*.iml
++.gradle
++/local.properties
++/.idea/caches
++/.idea/libraries
++/.idea/modules.xml
++/.idea/workspace.xml
++/.idea/navEditor.xml
++/.idea/assetWizardSettings.xml
++.DS_Store
++/build
++/captures
++.externalNativeBuild
++.cxx
+Index: app/src/main/java/com/example/n2/ActivityView.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.n2;\r\n\r\nimport android.os.Bundle;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\npublic class ActivityView extends AppCompatActivity {\r\n\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_view);\r\n\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/n2/ActivityView.java	(revision 89f989d0d0d4ff4ab3cbc09ec134c8e32a7282cd)
++++ app/src/main/java/com/example/n2/ActivityView.java	(date 1605804595027)
+@@ -13,5 +13,7 @@
+         setContentView(R.layout.activity_view);
+ 
+ 
++
++
+     }
+ }
+Index: gradlew.bat
+===================================================================
+--- gradlew.bat	(date 1605186268000)
++++ gradlew.bat	(date 1605186268000)
+@@ -0,0 +1,84 @@
++@if "%DEBUG%" == "" @echo off
++@rem ##########################################################################
++@rem
++@rem  Gradle startup script for Windows
++@rem
++@rem ##########################################################################
++
++@rem Set local scope for the variables with windows NT shell
++if "%OS%"=="Windows_NT" setlocal
++
++set DIRNAME=%~dp0
++if "%DIRNAME%" == "" set DIRNAME=.
++set APP_BASE_NAME=%~n0
++set APP_HOME=%DIRNAME%
++
++@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
++set DEFAULT_JVM_OPTS=
++
++@rem Find java.exe
++if defined JAVA_HOME goto findJavaFromJavaHome
++
++set JAVA_EXE=java.exe
++%JAVA_EXE% -version >NUL 2>&1
++if "%ERRORLEVEL%" == "0" goto init
++
++echo.
++echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:findJavaFromJavaHome
++set JAVA_HOME=%JAVA_HOME:"=%
++set JAVA_EXE=%JAVA_HOME%/bin/java.exe
++
++if exist "%JAVA_EXE%" goto init
++
++echo.
++echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME%
++echo.
++echo Please set the JAVA_HOME variable in your environment to match the
++echo location of your Java installation.
++
++goto fail
++
++:init
++@rem Get command-line arguments, handling Windows variants
++
++if not "%OS%" == "Windows_NT" goto win9xME_args
++
++:win9xME_args
++@rem Slurp the command line arguments.
++set CMD_LINE_ARGS=
++set _SKIP=2
++
++:win9xME_args_slurp
++if "x%~1" == "x" goto execute
++
++set CMD_LINE_ARGS=%*
++
++:execute
++@rem Setup the command line
++
++set CLASSPATH=%APP_HOME%\gradle\wrapper\gradle-wrapper.jar
++
++@rem Execute Gradle
++"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" org.gradle.wrapper.GradleWrapperMain %CMD_LINE_ARGS%
++
++:end
++@rem End local scope for the variables with windows NT shell
++if "%ERRORLEVEL%"=="0" goto mainEnd
++
++:fail
++rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
++rem the _cmd.exe /c_ return code!
++if  not "" == "%GRADLE_EXIT_CONSOLE%" exit 1
++exit /b 1
++
++:mainEnd
++if "%OS%"=="Windows_NT" endlocal
++
++:omega
+Index: app/src/main/java/com/example/n2/CriarActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.n2;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\n\r\nimport com.example.n2.Estate;\r\nimport android.os.Bundle;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\nimport android.widget.EditText;\r\nimport android.widget.RadioButton;\r\nimport android.widget.RadioGroup;\r\nimport android.widget.TextView;\r\nimport android.os.Handler;\r\nimport android.content.Intent;\r\nimport android.widget.CheckBox;\r\nimport android.widget.Toast;\r\nimport android.view.View;\r\n\r\nimport com.github.rtoshiro.util.format.SimpleMaskFormatter;\r\nimport com.github.rtoshiro.util.format.text.MaskTextWatcher;\r\n\r\npublic class CriarActivity extends AppCompatActivity {\r\n\r\n    private EditText edt_fone;\r\n    private RadioGroup radio_tipo;\r\n    private RadioGroup radio_tamanho;\r\n\r\n    private String tamanhoString;\r\n    private String tipoString;\r\n    private boolean checkStatus;\r\n    private String status;\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_criar1);\r\n\r\n        edt_fone = (EditText) findViewById(R.id.edt_fone);\r\n        radio_tipo = findViewById(R.id.radio_tipo);\r\n        radio_tamanho = findViewById(R.id.radio_tamanho);\r\n\r\n        //MASCARA PARA O NUMERO DE TELEFONE\r\n        SimpleMaskFormatter smf = new SimpleMaskFormatter(\"(NN)NNNNN-NNNN\");\r\n        MaskTextWatcher mtw = new MaskTextWatcher(edt_fone, smf);\r\n        edt_fone.addTextChangedListener((mtw));\r\n\r\n        }\r\n\r\n        //FUNÇÃO QUE CHAMA O BOTÃO PARA  VALIDAR E VOLTAR PARA MainActivity\r\n        public void Btn_validar(View v) {\r\n            //VERIFICAÇÃO SE OS DADOS ESTÃO PREENCHIDOS CORRETAMENTES\r\n            if(edt_fone.length()!=14 || tipoString==null || tamanhoString==null){\r\n                Toast.makeText(this, \"Preencha todos os dados corretamente\", Toast.LENGTH_SHORT).show();\r\n            }else{\r\n\r\n                //PEGA TODOS OS DADOS  PREENCHIDOS PELO  USUARIO\r\n                Estate estate;\r\n                estate = new Estate(tipoString,tamanhoString, edt_fone.getText().toString(),status);\r\n                //Toast.makeText(this, estate.toString(), Toast.LENGTH_SHORT).show();\r\n\r\n                //VOLTA PARA A MainActivity\r\n                Intent intent = new Intent(CriarActivity.this, MainActivity.class);\r\n                startActivity(intent);\r\n                //PASSA A MENSAGEM QUE CONFIRMA QUE A CLASS Estate RECEBEU OS DADOS\r\n                Toast.makeText(this, \"Local criado com sucesso!!\", Toast.LENGTH_SHORT).show();\r\n            }\r\n        }\r\n\r\n        //FUNCAO QUE VERIFICA QUAL O TAMANHO ESCOLHIDO\r\n        public void RadioGroupTamanho(View v){\r\n\r\n            int itemRadGroupTamanho = radio_tamanho.getCheckedRadioButtonId();\r\n\r\n            if(itemRadGroupTamanho != -1){\r\n                RadioButton tamSelecionado = findViewById(itemRadGroupTamanho);\r\n\r\n                 tamanhoString = tamSelecionado.getText().toString();\r\n\r\n               // Toast.makeText(this, tamanhoString, Toast.LENGTH_SHORT).show();\r\n            }\r\n        }\r\n\r\n    //FUNCAO QUE VERIFICA QUAL O TIPO ESCOLHIDO\r\n        public void RadioGroupTipo(View v) {\r\n\r\n            int itemRadGroupTipo = radio_tipo.getCheckedRadioButtonId();\r\n\r\n            if (itemRadGroupTipo != -1) {\r\n                RadioButton tipoSelecionado = findViewById(itemRadGroupTipo);\r\n\r\n                tipoString = tipoSelecionado.getText().toString();\r\n\r\n              //  Toast.makeText(this, tipoString, Toast.LENGTH_SHORT).show();\r\n            }\r\n        }\r\n\r\n        //FUNCAO QUE VERIFICA SE O IMOVEL ESTÁ EM CONSTRUÇÃO\r\n        public void CheckBox(View v) {\r\n            checkStatus = ((CheckBox) v).isChecked();\r\n            if (checkStatus == true) {\r\n                status = \"Em construção\";\r\n            } else {\r\n                status = \"Não está em construção\";\r\n            }\r\n\r\n        }\r\n}\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/n2/CriarActivity.java	(revision 89f989d0d0d4ff4ab3cbc09ec134c8e32a7282cd)
++++ app/src/main/java/com/example/n2/CriarActivity.java	(date 1605805787302)
+@@ -3,6 +3,8 @@
+ import androidx.appcompat.app.AppCompatActivity;
+ 
+ import com.example.n2.Estate;
++
++import android.content.Context;
+ import android.os.Bundle;
+ import android.view.View;
+ import android.widget.Button;
+@@ -29,12 +31,15 @@
+     private String tipoString;
+     private boolean checkStatus;
+     private String status;
++    private BancoDeDados BD;
+ 
+     @Override
+     protected void onCreate(Bundle savedInstanceState) {
+         super.onCreate(savedInstanceState);
+         setContentView(R.layout.activity_criar1);
+ 
++        BD = new BancoDeDados(this);
++
+         edt_fone = (EditText) findViewById(R.id.edt_fone);
+         radio_tipo = findViewById(R.id.radio_tipo);
+         radio_tamanho = findViewById(R.id.radio_tamanho);
+@@ -44,65 +49,66 @@
+         MaskTextWatcher mtw = new MaskTextWatcher(edt_fone, smf);
+         edt_fone.addTextChangedListener((mtw));
+ 
+-        }
++    }
+ 
+-        //FUNÇÃO QUE CHAMA O BOTÃO PARA  VALIDAR E VOLTAR PARA MainActivity
+-        public void Btn_validar(View v) {
+-            //VERIFICAÇÃO SE OS DADOS ESTÃO PREENCHIDOS CORRETAMENTES
+-            if(edt_fone.length()!=14 || tipoString==null || tamanhoString==null){
+-                Toast.makeText(this, "Preencha todos os dados corretamente", Toast.LENGTH_SHORT).show();
+-            }else{
++    //FUNÇÃO QUE CHAMA O BOTÃO PARA  VALIDAR E VOLTAR PARA MainActivity
++    public void Btn_validar(View v) {
++        //VERIFICAÇÃO SE OS DADOS ESTÃO PREENCHIDOS CORRETAMENTES
++        if (edt_fone.length() != 14 || tipoString == null || tamanhoString == null) {
++            Toast.makeText(this, "Preencha todos os dados corretamente", Toast.LENGTH_SHORT).show();
++        } else {
+ 
+-                //PEGA TODOS OS DADOS  PREENCHIDOS PELO  USUARIO
+-                Estate estate;
+-                estate = new Estate(tipoString,tamanhoString, edt_fone.getText().toString(),status);
+-                //Toast.makeText(this, estate.toString(), Toast.LENGTH_SHORT).show();
++            //PEGA TODOS OS DADOS  PREENCHIDOS PELO  USUARIO
++            Estate estate;
++            estate = new Estate(tipoString, tamanhoString, edt_fone.getText().toString(), status);
++            //Toast.makeText(this, estate.toString(), Toast.LENGTH_SHORT).show();
+ 
+-                //VOLTA PARA A MainActivity
+-                Intent intent = new Intent(CriarActivity.this, MainActivity.class);
+-                startActivity(intent);
+-                //PASSA A MENSAGEM QUE CONFIRMA QUE A CLASS Estate RECEBEU OS DADOS
+-                Toast.makeText(this, "Local criado com sucesso!!", Toast.LENGTH_SHORT).show();
+-            }
+-        }
++            //VOLTA PARA A MainActivity
++            Intent intent = new Intent(CriarActivity.this, MainActivity.class);
++            startActivity(intent);
++            //PASSA A MENSAGEM QUE CONFIRMA QUE A CLASS Estate RECEBEU OS DADOS
++            Toast.makeText(this, "Local criado com sucesso!!", Toast.LENGTH_SHORT).show();
++
++        }
++    }
+ 
+-        //FUNCAO QUE VERIFICA QUAL O TAMANHO ESCOLHIDO
+-        public void RadioGroupTamanho(View v){
++    //FUNCAO QUE VERIFICA QUAL O TAMANHO ESCOLHIDO
++    public void RadioGroupTamanho(View v) {
+ 
+-            int itemRadGroupTamanho = radio_tamanho.getCheckedRadioButtonId();
++        int itemRadGroupTamanho = radio_tamanho.getCheckedRadioButtonId();
+ 
+-            if(itemRadGroupTamanho != -1){
+-                RadioButton tamSelecionado = findViewById(itemRadGroupTamanho);
++        if (itemRadGroupTamanho != -1) {
++            RadioButton tamSelecionado = findViewById(itemRadGroupTamanho);
+ 
+-                 tamanhoString = tamSelecionado.getText().toString();
++            tamanhoString = tamSelecionado.getText().toString();
+ 
+-               // Toast.makeText(this, tamanhoString, Toast.LENGTH_SHORT).show();
+-            }
+-        }
++            // Toast.makeText(this, tamanhoString, Toast.LENGTH_SHORT).show();
++        }
++    }
+ 
+     //FUNCAO QUE VERIFICA QUAL O TIPO ESCOLHIDO
+-        public void RadioGroupTipo(View v) {
++    public void RadioGroupTipo(View v) {
+ 
+-            int itemRadGroupTipo = radio_tipo.getCheckedRadioButtonId();
++        int itemRadGroupTipo = radio_tipo.getCheckedRadioButtonId();
+ 
+-            if (itemRadGroupTipo != -1) {
+-                RadioButton tipoSelecionado = findViewById(itemRadGroupTipo);
++        if (itemRadGroupTipo != -1) {
++            RadioButton tipoSelecionado = findViewById(itemRadGroupTipo);
+ 
+-                tipoString = tipoSelecionado.getText().toString();
++            tipoString = tipoSelecionado.getText().toString();
+ 
+-              //  Toast.makeText(this, tipoString, Toast.LENGTH_SHORT).show();
+-            }
+-        }
++            //  Toast.makeText(this, tipoString, Toast.LENGTH_SHORT).show();
++        }
++    }
+ 
+-        //FUNCAO QUE VERIFICA SE O IMOVEL ESTÁ EM CONSTRUÇÃO
+-        public void CheckBox(View v) {
+-            checkStatus = ((CheckBox) v).isChecked();
+-            if (checkStatus == true) {
+-                status = "Em construção";
+-            } else {
+-                status = "Não está em construção";
+-            }
++    //FUNCAO QUE VERIFICA SE O IMOVEL ESTÁ EM CONSTRUÇÃO
++    public void CheckBox(View v) {
++        checkStatus = ((CheckBox) v).isChecked();
++        if (checkStatus == true) {
++            status = "Em construção";
++        } else {
++            status = "Não está em construção";
++        }
+ 
+-        }
++    }
+ }
+ 
+Index: build.gradle
+===================================================================
+--- build.gradle	(date 1605186268000)
++++ build.gradle	(date 1605186268000)
+@@ -0,0 +1,24 @@
++// Top-level build file where you can add configuration options common to all sub-projects/modules.
++buildscript {
++    repositories {
++        google()
++        jcenter()
++    }
++    dependencies {
++        classpath "com.android.tools.build:gradle:4.0.1"
++
++        // NOTE: Do not place your application dependencies here; they belong
++        // in the individual module build.gradle files
++    }
++}
++
++allprojects {
++    repositories {
++        google()
++        jcenter()
++    }
++}
++
++task clean(type: Delete) {
++    delete rootProject.buildDir
++}
+\ No newline at end of file
+Index: .idea/.name
+===================================================================
+--- .idea/.name	(date 1605190443255)
++++ .idea/.name	(date 1605190443255)
+@@ -0,0 +1,1 @@
++N2
+\ No newline at end of file
+Index: .idea/.gitignore
+===================================================================
+--- .idea/.gitignore	(date 1605557546141)
++++ .idea/.gitignore	(date 1605557546141)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
